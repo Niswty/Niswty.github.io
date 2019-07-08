@@ -1,27 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Niswty</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-07-03T13:11:06.714Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="https://niswty.github.io/"/>
+  <updated>2019-07-07T15:49:39.602Z</updated>
+  <id>https://niswty.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Niswty</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>my new post</title>
+    <link href="https://niswty.github.io/2019/07/05/my-new-post/"/>
+    <id>https://niswty.github.io/2019/07/05/my-new-post/</id>
+    <published>2019-07-04T23:55:59.000Z</published>
+    <updated>2019-07-07T15:49:39.602Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h3 id="非线性svm与核函数"><a href="#非线性svm与核函数" class="headerlink" title="非线性svm与核函数"></a>非线性svm与核函数</h3><p>当分类问题是非线性，可以使用非线性svm，主要的特点是利用核函数。</p><h3 id="核技巧"><a href="#核技巧" class="headerlink" title="核技巧"></a>核技巧</h3><p>非线性分类问题😵<br>对于训练数据集，能用一个超曲面将正负例正确分开，则称该问题为非线性可分问题<br>非线性问题往往不好求解，所以进行非线性变换，将非线性问题变换为线性问题，通过解变换后的线性问题求解原来的非线性问题。💃💃</p><p>线性分类法求解非线性分类问题：使用变换，将原空间数据映射到新空间；然后在新空间利用线性分类学习方法从训练集中学习分类模型。核技巧就属于这样的方法</p><p>核技巧应用到svm的基本思想：通过非线性变换将输入空间XX(欧氏空间&amp;离散集合)对应于特征空间HH(希尔伯特空间)，使得输入空间的超曲面模型对应特征空间的超平面模型，最后分类问题的学习任务是通过在特征空间在求解线性支持向量机就可以完成。<br>如果存在一个从XX到HH的映射，映射关系表示如下：<br>ϕ(x):X→H<br>ϕ(x):X→H</p><p>使得对所有的x,z∈Xx,z∈X，函数K(x,z)K(x,z)满足条件<br>K(x,z)=ϕ(x)⋅ϕ(z)<br>K(x,z)=ϕ(x)⋅ϕ(z)</p><p>则称K(x,z)K(x,z)为核函数，ϕ(x)ϕ(x)为映射函数，ϕ(x)⋅ϕ(z)ϕ(x)⋅ϕ(z)为ϕ(x)和ϕ(z)ϕ(x)和ϕ(z)内积</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://niswty.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://niswty.github.io/2019/07/04/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://niswty.github.io/2019/07/04/测试/</id>
+    <published>2019-07-04T15:07:36.435Z</published>
+    <updated>2019-07-07T22:11:44.084Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="非线性svm与核函数"><a href="#非线性svm与核函数" class="headerlink" title="非线性svm与核函数"></a>非线性svm与核函数</h3><p>当分类问题是非线性，可以使用非线性svm，主要的特点是利用核函数。</p><h3 id="核技巧"><a href="#核技巧" class="headerlink" title="核技巧"></a>核技巧</h3><p>非线性分类问题😵<br>对于训练数据集，能用一个超曲面将正负例正确分开，则称该问题为非线性可分问题</p><p>非线性问题往往不好求解，所以进行非线性变换，将非线性问题变换为线性问题，通过解变换后的线性问题求解原来的非线性问题。💃💃</p><p>线性分类法求解非线性分类问题：使用变换，将原空间数据映射到新空间；然后在新空间利用线性分类学习方法从训练集中学习分类模型。核技巧就属于这样的方法</p><hr><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"></p><p>核技巧应用到svm的基本思想：通过非线性变换将输入空间XX(欧氏空间&amp;离散集合)对应于特征空间HH(希尔伯特空间)，使得输入空间的超曲面模型对应特征空间的超平面模型，最后分类问题的学习任务是通过在特征空间在求解线性支持向量机就可以完成。<br>如果存在一个从XX到HH的映射，映射关系表示如下：<br>ϕ(x):X→H<br>ϕ(x):X→H</p><p>使得对所有的x,z∈Xx,z∈X，函数K(x,z)K(x,z)满足条件<br>K(x,z)=ϕ(x)⋅ϕ(z)<br>K(x,z)=ϕ(x)⋅ϕ(z)</p><p>则称K(x,z)K(x,z)为核函数，ϕ(x)ϕ(x)为映射函数，ϕ(x)⋅ϕ(z)ϕ(x)⋅ϕ(z)为ϕ(x)和ϕ(z)ϕ(x)和ϕ(z)内积</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;非线性svm与核函数&quot;&gt;&lt;a href=&quot;#非线性svm与核函数&quot; class=&quot;headerlink&quot; title=&quot;非线性svm与核函数&quot;&gt;&lt;/a&gt;非线性svm与核函数&lt;/h3&gt;&lt;p&gt;当分类问题是非线性，可以使用非线性svm，主要的特点是利用核函数。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/07/03/hello-world/"/>
-    <id>http://yoursite.com/2019/07/03/hello-world/</id>
+    <link href="https://niswty.github.io/2019/07/03/hello-world/"/>
+    <id>https://niswty.github.io/2019/07/03/hello-world/</id>
     <published>2019-07-03T13:11:06.714Z</published>
-    <updated>2019-07-03T13:11:06.714Z</updated>
+    <updated>2019-07-07T23:11:47.972Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     

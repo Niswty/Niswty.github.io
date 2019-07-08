@@ -1050,7 +1050,7 @@ pre .javascript .function {
   right: 30px;
   z-index: 1050;
   padding: 0 6px;
-  width: 24px;
+  width: initial;
   background: #222;
   font-size: 12px;
   opacity: 1;
@@ -1202,6 +1202,74 @@ pre .javascript .function {
 }
 .use-motion .menu-item {
   opacity: 0;
+}
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+.github-corner > svg {
+  fill: #222;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@media (max-width: 767px) {
+  .github-corner > svg {
+    top: inherit;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
 }
 .post-body {
   overflow-wrap: break-word;
@@ -1590,6 +1658,16 @@ pre .javascript .function {
 .fancybox-close:hover {
   border: none;
 }
+.post-copyright {
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #ff1700;
+  background-color: #f9f9f9;
+  list-style: none;
+}
+.post-copyright i.fa {
+  font-size: 15px;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -1606,6 +1684,14 @@ pre .javascript .function {
 }
 .rtl.post-title {
   font-family: UKIJ Ekran;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
 }
 .sidebar {
   position: fixed;
@@ -1626,11 +1712,6 @@ pre .javascript .function {
 .sidebar span.exturl:hover {
   color: #eee;
   border-bottom-color: #eee;
-}
-@media (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
 }
 .sidebar-inner {
   position: relative;
@@ -1675,7 +1756,6 @@ pre .javascript .function {
   .sidebar-toggle {
     opacity: 0.8;
     right: 20px;
-    display: none;
   }
 }
 .sidebar-toggle-line {
@@ -1698,6 +1778,9 @@ pre .javascript .function {
   height: auto;
   border: 2px solid #333;
   opacity: 1;
+}
+.site-author-image {
+  border-radius: 100%;
 }
 .site-author-name {
   margin: 5px 0 0;
@@ -1732,7 +1815,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f40588;
+  background: #ff7d2f;
 }
 .feed-link,
 .chat {
@@ -2089,6 +2172,38 @@ pre .javascript .function {
   top: 50%;
   transform: translate(-50%, -50%);
   color: #ccc;
+}
+.copy-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  user-select: none;
+  outline: 0;
+}
+.highlight-wrap .copy-btn {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  right: 4px;
+  top: 8px;
+}
+.highlight-wrap:hover .copy-btn,
+.highlight-wrap .copy-btn:focus {
+  opacity: 1;
+}
+.highlight-wrap {
+  position: relative;
 }
 .page-archive .archive-page-counter {
   position: relative;
@@ -2672,4 +2787,162 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.posts-expand .post {
+  margin-top: 80px;
+}
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl {
+  color: #fc6423;
+}
+.brand:hover {
+  color: #fc6423;
+}
+.posts-expand .post-meta time {
+  border-bottom: none;
+}
+.logo-line-before i,
+.logo-line-after i {
+  background: none;
+}
+.posts-expand .post-title-link::before {
+  background: none;
+}
+a.post-title-link:hover {
+  color: #fc6423;
+}
+.menu-item-active a,
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  background: none;
+}
+a {
+  border-bottom: none;
+}
+::selection {
+  background: #fc6423;
+  color: #f7f7f7;
+}
+.out-img-topic {
+  display: block;
+  max-height: 500px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+img.img-topic {
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
+#footer {
+/* min-height: 100px; */
+  _height: 15px;
+  height: 100px;
+  position: absolute !important;
+  bottom: -470px !important;
+  margin: 0;
+  left: 0;
+  right: 0;
+  background: #232323;
+  padding: 17px 0 27px;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 1368px;
+}
+.footer-inner {
+  background: url("/images/footer.png") no-repeat 50%;
+  height: 368px;
+  z-index: 1;
+  position: absolute;
+  bottom: 70px;
+  width: 1368px !important;
+  pointer-events: none;
+}
+.copyright,
+.powered-by,
+span.post-meta-divider,
+.theme-info {
+  position: absolute;
+}
+.copyright {
+  bottom: 0px;
+  left: 675px;
+}
+.powered-by {
+  bottom: -18px;
+  left: 585px;
+}
+span.post-meta-divider {
+  bottom: -18px;
+  left: 724px;
+}
+.theme-info {
+  bottom: -18px;
+  left: 744px;
+}
+.post-type-normal {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: #ebf2f6 1px solid;
+}
+.post-nav-item {
+  padding-top: 40px;
+}
+main#main {
+  margin-bottom: 330px;
+}
+.pagination {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border-bottom: 0;
+  border-top: none;
+}
+.post-button a {
+  border-bottom: 2px solid #ebf2f6;
+}
+.post-button a:hover {
+  border-bottom-color: #fc6423;
+}
+.btn:hover {
+  border-color: #fc6423;
+  color: #fc6423;
+}
+span#busuanzi_container_site_uv {
+  position: absolute;
+  bottom: -37px;
+  left: 680px;
+}
+.zhiding:after {
+  content: "|";
+  margin: 0 0.5em;
+  color: #999;
+}
+.copy-btn {
+  color: #fc6423;
+}
+# 留言板,
+#ds-reset .ds-avatar img,
+#ds-recent-visitors .ds-avatar img {
+  width: 54px;
+  height: 54px; /*設置圖像的長和寬，這裏要根據自己的評論框情況更改*/
+  border-radius: 27px; /*設置圖像圓角效果,在這裏我直接設置了超過width/2的像素，即為圓形了*/
+  -webkit-border-radius: 27px; /*圓角效果：兼容webkit瀏覽器*/
+  -moz-border-radius: 27px;
+  box-shadow: inset 0 -1px 0 rgba(51,51,51,0.2) sf; /*設置圖像陰影效果*/
+  -webkit-box-shadow: inset 0 -1px 0 rgba(51,51,51,0.2) sf;
+}
+#ds-recent-visitors .ds-avatar {
+  float: left;
+}
+#ds-thread #ds-reset .ds-powered-by {
+  display: none;
 }
